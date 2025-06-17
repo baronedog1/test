@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Black background for space */
+    color: #ffffff; /* White text */
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+#scene-container {
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    display: block; /* Ensure it's a block element */
+}
+
+#controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: rgba(50, 50, 50, 0.7); /* Semi-transparent dark background */
+    border-radius: 5px;
+    z-index: 100; /* Ensure controls are on top of the canvas */
+}
+
+#controls button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background-color: #555;
+}
+
+#controls button:last-child {
+    margin-right: 0;
+}
