@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solar System Model</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button id="pause">Pause</button>
+        <button id="resume">Resume</button>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.138.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
